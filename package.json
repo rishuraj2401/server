@@ -7,8 +7,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
+    "build": "",
     "dev": "node ./app.js",
     "start": "node ./app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-project && npm run build --prefix my-project"
@@ -27,6 +26,8 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.16.1",
+    "@testing-library/user-event": "^14.4.2",
     "gh-pages": "^4.0.0"
   }
 }
