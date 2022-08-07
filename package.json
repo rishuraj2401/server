@@ -10,7 +10,7 @@
     "build": "",
     "dev": "node ./app.js",
     "start": "node ./app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-project && npm run build --prefix my-project"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix my-project && npm run build --prefix my-project"
   },
   "author": "",
   "license": "ISC",

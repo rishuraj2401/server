@@ -14,8 +14,8 @@ app.use(require("./router/auth"))
  const cregistration =require("./Cmodel")
  require("./conne");
 //  const mode =require("./schema")
- app.get("/", (req ,res )=>
-res.send("hellio register"));
+//  app.get("/", (req ,res )=>
+// res.send("hellio register"));
 app.get("/register", (req ,res )=>{
 res.send("hiii register")
 });
@@ -258,7 +258,7 @@ if (process.env.NODE_ENV=="production"){
     })
 }
 app.use(express.urlencoded({extended :false}));
- const port = process.env.PORT || 3012;
-var server = app.listen(3012, function () {
+ const port = process.env.PORT || 3000;
+var server = app.listen(port, function () {
     console.log('Node server is totally running...');
 });

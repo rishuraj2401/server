@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import {Navbar} from './Navbar';
 import {  BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 import {Form} from './Form';
-import Navb from './Navb';
+// import Navb from './Navb';
 import Gatepass from './Gatepass';
 import Permit from './Permit';
 import Gaurd from './Gaurd';
