@@ -1,8 +1,8 @@
 {
   "name": "cls",
   "version": "1.0.0",
-  "engine": {
-    "": "12.x"
+  "engines": {
+    "node": "16.x"
   },
   "description": "",
   "main": "app.js",
