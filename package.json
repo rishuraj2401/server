@@ -11,7 +11,7 @@
     "build": "webpack --config webpack.config.js",
     "dev": "node ./app.js",
     "start": "node ./app.js",
-    "heroku-postbuild": "CI=false && npm install && cd my-project && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-project && npm run build --prefix my-project"
   },
   "author": "",
   "license": "ISC",
