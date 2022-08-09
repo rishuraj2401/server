@@ -8,7 +8,7 @@
   "main": "app.js",
   "scripts": {
     "build": "cd my-project && npm run build",
-    "install-client": "cd my-project && npm install",
+    "install-my-project": "cd my-project && npm install",
     "heroku-postbuild": "npm run install-my-project && npm run build",
     "server": "nodemon app.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-project\"",
