@@ -259,6 +259,6 @@ if (process.env.NODE_ENV=="production"){
 }
 app.use(express.urlencoded({extended :false}));
  const port = process.env.PORT || 3000;
-var server = app.listen(port, function () {
+var server = app.listen(port,"0.0.0.0", function () {
     console.log('Node server is totally running...');
 });

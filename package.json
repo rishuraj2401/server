@@ -23,7 +23,8 @@
     "mongoose": "^6.2.10",
     "nodemon": "^2.0.15",
     "parser": "^0.1.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.16.1",
