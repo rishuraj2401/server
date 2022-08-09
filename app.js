@@ -6,6 +6,7 @@ const { getMaxListeners } = require("process");
 const model = require("./model");
 const registration = require("./registration.js")
 const bcrypt = require('bcrypt');
+app.use(cors());
 require("./nav")
 dotenv.config({ path: './config.env' })
 app = express();
