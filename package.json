@@ -7,11 +7,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "",
-    "dev": "node ./app.js",
-    "start": "node ./app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix my-project && npm run build --prefix my-project"
-  },
+    "build": "cd my-project && npm run build",
+    "install-client": "cd my-project && npm install",
+    "heroku-postbuild": "npm run install-my-project && npm run build",
+    "server": "nodemon app.js",
+    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-project\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-project\""
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
