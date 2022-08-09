@@ -14,7 +14,7 @@
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-project\"",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix my-project\""
   },
-  "author": "",
+  "author": "",   
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
