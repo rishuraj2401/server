@@ -6,7 +6,7 @@ const { getMaxListeners } = require("process");
 const model = require("./model");
 const registration = require("./registration.js")
 const bcrypt = require('bcrypt');
-app.use(cors());
+
 require("./nav")
 dotenv.config({ path: './config.env' })
 app = express();
@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(require("./router/auth"))
 const cregistration = require("./Cmodel")
 require("./conne");
+// app.use(cors());
 //  const mode =require("./schema")
 //  app.get("/", (req ,res )=>
 // res.send("hellio register"));
@@ -265,7 +266,7 @@ if (process.env.NODE_ENV == "production") {
     })
 }
 app.use(express.urlencoded({ extended: false }));
-const port = process.env.PORT || 3000;
-var server = app.listen(port, "0.0.0.0", function () {
+const port = process.env.PORT || 8000;
+var server = app.listen(port, function () {
     console.log('Node server is totally running...');
 });
