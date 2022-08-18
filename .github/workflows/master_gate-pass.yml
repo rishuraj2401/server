@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Gate-pass'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DF719A36885645E2A6956E1D20D9C767 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6D7934FDD6D04E45992C5738288A8E62 }}
           package: .
