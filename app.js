@@ -262,11 +262,19 @@ app.put("/Ret", async (req, res) => {
 if (process.env.NODE_ENV == "production") {
    
  
-    app.use(express.static(path.resolve(__dirname, "./my-project/build")));
+    app.use(express.static(path.resolve(__dirname, "./client/build")));
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "./my-project/build", "index.html"))
+        res.sendFile(path.resolve(__dirname, "./client/build", "index.html"))
     })
 }
+// const path = require("path");
+
+// // Step 1:
+// app.use(express.static(path.resolve(__dirname, "./client/build")));
+// // Step 2:
+// app.get("*", function (request, response) {
+//   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+// });
 app.use(express.urlencoded({ extended: false }));
 const port = process.env.PORT || 8080;
 var server = app.listen(port, function () {
