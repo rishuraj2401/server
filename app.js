@@ -1,7 +1,7 @@
 //  const { getSpaceUntilMaxLength } = require("@testing-library/user-event/dist/utils");
 const express = require("express");
 const dotenv = require("dotenv")
-const path = require("path");
+// const path = require("path");
 const { getMaxListeners } = require("process");
 const model = require("./model");
 const registration = require("./registration.js")
