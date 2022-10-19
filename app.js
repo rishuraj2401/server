@@ -258,7 +258,6 @@ app.put("/Ret", async (req, res) => {
 
 }
 );
-//    const path = require("path");
 if (process.env.NODE_ENV == "production") {
    
  
@@ -267,7 +266,6 @@ if (process.env.NODE_ENV == "production") {
         res.sendFile(path.resolve(__dirname, "./client/build", "index.html"))
     })
 }
-// const path = require("path");
 
 // // Step 1:
 // app.use(express.static(path.resolve(__dirname, "./client/build")));
