@@ -162,8 +162,8 @@ app.post("/Permi", async (req, res) => {
 
 }
 );
-a = process.env.PERMI
-app.get(a, async (req, res) => {
+
+app.get(/Permi, async (req, res) => {
     const aa = await model.find()
     res.json(aa)
     console.log(aa);
@@ -258,7 +258,7 @@ app.put("/Ret", async (req, res) => {
 
 }
 );
-if (process.env.NODE_ENV == "production") {
+if ("production" == "production") {
    
  
     app.use(express.static(path.resolve(__dirname, "./client/build")));
