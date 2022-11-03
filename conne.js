@@ -1,7 +1,6 @@
 const mongoose= require("mongoose");
 const dotenv =require("dotenv")
-dlink=process.env.DLINK
-mongoose.connect(dlink ,
+mongoose.connect("mongodb+srv://rishuraj2401:Rishu%402002@cluster0.twrql.mongodb.net/mydata" ,
 {useNewUrlParser:true , useUnifiedTopology:true,autoIndex:true}
 ).then(()=>{
     console.log("conection successfulllll");
